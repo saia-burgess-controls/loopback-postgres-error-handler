@@ -1,2 +1,2 @@
-# loopback-component-postgres-error-handler
+# loopback-postgres-error-handler
 Convert postgres error messges for the loopback error handler
