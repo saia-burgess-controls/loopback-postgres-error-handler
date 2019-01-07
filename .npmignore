@@ -1,0 +1,6 @@
+test/
+.editorconfig
+.eslintrc
+.git
+.gitignore
+.vscode

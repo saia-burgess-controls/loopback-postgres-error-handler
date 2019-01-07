@@ -2,10 +2,10 @@
     "db": {
         "name": "db",
         "connector": "postgresql",
-        "host": "0.0.0.0",
-        "port": 5432,
-        "database": "microservice_test",
-        "user":"microservice_test",
-        "password": "test"
+        "host": "127.0.0.1",
+        "port": 5433,
+        "database": "sbc-postgres-testing",
+        "user": "sbc-postgres-testing",
+        "password": "sbc-postgres-testing-pwd"
     }
 }

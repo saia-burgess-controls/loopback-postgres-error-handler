@@ -5,5 +5,29 @@
                 "${restApiRoot}"
             ]
         }
+    },
+    "final": {
+        "loopback#urlNotFound": {}
+    },
+    "final:after": {
+        "./../../../index.js": {
+            "params": {
+                "errorCodeMappings": [
+                    ["23000", 406],
+                    ["23001", 406],
+                    ["23502", 406],
+                    ["23503", 406],
+                    ["23514", 406],
+                    ["23514", 406]
+                ]
+            }
+        },
+        "@joinbox/loopback-microservice#errorHandler": {
+            "params": {
+                "debug": false,
+                "log": true,
+                "serviceName": "test-service"
+            }
+        }
     }
 }

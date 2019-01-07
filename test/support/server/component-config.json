@@ -1,6 +1,5 @@
 {
-    "../../../index": {
-        "rejectUnknownProperties": true,
-        "preserveColumnCase": false
+    "@joinbox/loopback-component-jb-migration": {
+        "exposeAt": "migration"
     }
 }

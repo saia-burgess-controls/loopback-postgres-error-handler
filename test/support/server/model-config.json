@@ -7,19 +7,17 @@
         ],
         "mixins": [
             "loopback/common/mixins",
-            "loopback/server/mixins"
+            "loopback/server/mixins",
+            "@joinbox/loopback-component-jb-migration/src/mixins"
         ]
+    },
+    "Migration": {
+        "dataSource": "db"
     },
     "Book": {
         "dataSource": "db"
     },
-    "Page": {
-        "dataSource": "db"
-    },
     "Author": {
-        "dataSource": "db"
-    },
-    "Publisher": {
         "dataSource": "db"
     }
 }
