@@ -1,0 +1,5 @@
+{
+    "@joinbox/loopback-component-jb-migration": {
+        "exposeAt": "migration"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "db": {
+        "name": "db",
+        "connector": "postgresql",
+        "host": "127.0.0.1",
+        "port": 5433,
+        "database": "sbc-postgres-testing",
+        "user": "sbc-postgres-testing",
+        "password": "sbc-postgres-testing-pwd"
+    }
+}

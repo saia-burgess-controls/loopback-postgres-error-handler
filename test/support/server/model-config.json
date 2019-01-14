@@ -1,0 +1,23 @@
+{
+    "_meta": {
+        "sources": [
+            "loopback/common/models",
+            "loopback/server/models",
+            "./models"
+        ],
+        "mixins": [
+            "loopback/common/mixins",
+            "loopback/server/mixins",
+            "@joinbox/loopback-component-jb-migration/src/mixins"
+        ]
+    },
+    "Migration": {
+        "dataSource": "db"
+    },
+    "Book": {
+        "dataSource": "db"
+    },
+    "Author": {
+        "dataSource": "db"
+    }
+}

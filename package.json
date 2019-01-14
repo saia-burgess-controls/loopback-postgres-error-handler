@@ -1,0 +1,33 @@
+{
+  "name": "@joinbox/loopback-postgres-error-handler",
+  "version": "1.0.0",
+  "description": "Convert postgres error messages for the loopback error handler",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node_modules/.bin/eslint .",
+    "test:watch": "WATCH_TESTS=\"--watch\" npm run test",
+    "test:base": "mocha $NODE_DEBUG_OPTION $WATCH_TESTS --recursive --check-leaks --full-trace --exit",
+    "test:unit": "npm run test:base ./test/support/setup/unit.js ./test/unit",
+    "test:integration": "npm run test:base ./test/support/setup/integration.js ./test/integration",
+    "test": "npm run test:base ./test/support/setup/integration.js ./test/integration ./test/unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joinbox/loopback-postgres-error-handler.git"
+  },
+  "author": "Lorenzo Kappeler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joinbox/loopback-postgres-error-handler/issues"
+  },
+  "homepage": "https://github.com/joinbox/loopback-postgres-error-handler#readme",
+  "devDependencies": {
+    "@joinbox/eslint-config-joinbox": "^1.0.8",
+    "@joinbox/loopback-component-jb-migration": "^1.0.0",
+    "@joinbox/loopback-microservice": "^1.2.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.12.1",
+    "loopback-connector-postgresql": "^3.5.0",
+    "mocha": "^4.0.1"
+  }
+}

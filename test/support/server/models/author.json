@@ -1,0 +1,30 @@
+{
+  "name": "Author",
+  "plural": "authors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "postgresql": {
+        "schema": "public",
+        "table": "Author"
+    }
+  },
+  "relationFilter": {
+    "enabled": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "books": {
+      "type": "hasAndBelongsToMany",
+      "model": "Book"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Book",
+  "plural": "books",
+  "public": true,
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "postgresql": {
+        "schema": "public",
+        "table": "Book"
+    }
+  },
+  "relationFilter": {
+    "enabled": true,
+    "rejectUnknownProperties": false
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "author": {
+      "type": "belongsTo",
+      "model": "Author",
+      "foreignKey": "author_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

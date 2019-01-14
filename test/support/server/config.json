@@ -1,0 +1,8 @@
+{
+    "port": 3987,
+    "remoting": {
+        "rest": {
+            "handleErrors": false
+        }
+    }
+}
