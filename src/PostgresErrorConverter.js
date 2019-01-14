@@ -7,15 +7,11 @@ module.exports = class PostgresErrorConverter {
     }
 
     convertError(error, req, res, next) {
-        if (!this.mappings.has(error.code)) return next();
+        if (!this.mappings.has(error.code)) return next(error);
 
         // eslint-disable-next-line
-        const status = this.mappings.get(error.code);
-        const { message } = error;
-        //const customError = new MicroserviceError(message, { statusCode: status, originalError: error });
+        error.status = this.mappings.get(error.code);
 
-        // TEST
-        error.status = status;
         return next(error);
     }
 };

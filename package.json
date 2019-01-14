@@ -1,6 +1,6 @@
 {
   "name": "@joinbox/loopback-postgres-error-handler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert postgres error messages for the loopback error handler",
   "main": "index.js",
   "scripts": {
