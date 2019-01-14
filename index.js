@@ -5,3 +5,5 @@ module.exports = function(options) {
 
     return (err, req, res, next) => converter.convertError(err, req, res, next);
 };
+
+module.exports.PostgresErrorConverter = PostgresErrorConverter;
