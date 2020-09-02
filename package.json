@@ -1,5 +1,5 @@
 {
-  "name": "@joinbox/loopback-postgres-error-handler",
+  "name": "@maugli-sbc/loopback-postgres-error-handler",
   "version": "1.0.1",
   "description": "Convert postgres error messages for the loopback error handler",
   "main": "index.js",
